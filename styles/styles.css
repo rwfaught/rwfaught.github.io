@@ -1,0 +1,209 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    min-height: 100vh;
+}
+
+header.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+header.banner img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-box {
+    background-color: rgba(0, 51, 102, 0.6); 
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+
+.overlay-text h1 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 48px;
+}
+
+.overlay-text h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.overlay-text h1,
+.overlay-text h2 {
+    margin: 0;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #003366;
+}
+
+nav ul, footer {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    border-top: 3px solid #81c7eb;
+    border-bottom: 3px solid #81c7eb;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #00aaff;
+    text-decoration: underline;
+}
+
+nav ul li a.active {
+    color: #81c7eb;
+    border-bottom: 2px solid #81c7eb;
+    font-weight: bold;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.content-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    gap: 40px;
+    flex-direction: row;
+}
+
+.content-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.content-block .text {
+    flex-basis: 60%;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.content-block .image {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-block .image img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border: 4px solid #ffffff; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.aquarium-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.aquarium-links ul li {
+    margin-bottom: 10px;
+}
+
+.aquarium-links ul li a {
+    color: #003366;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.aquarium-links ul li a:hover {
+    color: #00aaff;
+    text-decoration: underline;
+}
+
+.featured-aquariums {
+    background-color: #e0f7fa;
+    padding: 0px 5px 20px 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+    width: 50%;
+    margin-left: 25%;
+    font-family: 'Righteous';
+    color: darkcyan;
+    text-align: center;
+    border: 4px solid #5a92a7; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.featured-aquariums h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.featured-aquariums ul {
+    list-style: none;
+    padding: 0;
+}
+
+.featured-aquariums ul li {
+    margin-bottom: 10px;
+}
+
+.featured-aquariums ul li a {
+    color: #003366;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.featured-aquariums ul li a:hover {
+    color: #00aaff;
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 16px;
+}
