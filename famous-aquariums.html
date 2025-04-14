@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Aquariums - Aquariums of the World</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="banner">
+        <img src="images/banner.jpg" alt="Aquarium Banner">
+        <div class="overlay-text">
+            <div class="overlay-box">
+                <h1>Aquariums of the World</h1>
+                <h2>Roger Faught</h2>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="famous-aquariums.html" target="_blank" rel="noopener noreferrer" class="active"><i class="fas fa-fish"></i> Famous Aquariums</a></li>
+            <li><a href="conservation.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-leaf"></i> Conservation</a></li>
+            <li><a href="contact.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="content-block">
+            <div class="text">
+                <p>Many famous aquariums around the world give visitors the chance to see marine life from different oceans and habitats. These aquariums are known for impressive exhibits, advanced facilities, and dedication to marine conservation. Each one offers a unique experience that helps people learn about sea animals and the importance of protecting ocean environments.</p>
+
+                <p>Some of the most well-known aquariums include the Georgia Aquarium in the United States, the Okinawa Churaumi Aquarium in Japan, and the S.E.A. Aquarium in Singapore. These aquariums feature large tanks with species such as whale sharks, manta rays, and other animals that are rarely seen in captivity. Visitors can walk through underwater tunnels and experience panoramic views of marine life in settings designed to replicate natural habitats.</p>
+            </div>
+            <div class="image">
+                <img src="images/famous-aquariums-image1.jpg" alt="Famous Aquarium Exhibit">
+            </div>
+        </section>
+
+        <section class="content-block reverse">
+            <div class="text">
+                <p>Other notable aquariums include the Dubai Aquarium & Underwater Zoo and the Lisbon Oceanarium in Portugal. The Dubai Aquarium is located inside one of the world’s largest shopping malls and features a massive viewing panel that showcases hundreds of fish species. The Lisbon Oceanarium focuses on education and sustainability, with exhibits that highlight the importance of conserving the world’s oceans and marine biodiversity.</p>
+
+                <p>These aquariums not only provide entertainment but also play an important role in raising awareness about marine conservation. They help visitors understand the challenges faced by marine ecosystems and encourage actions that support ocean protection. By showcasing the beauty and diversity of underwater life, famous aquariums inspire people to care more about the health of the oceans.</p>
+            </div>
+            <div class="image">
+                <img src="images/famous-aquariums-image2.jpg" alt="Marine Life at Aquarium">
+            </div>
+        </section>
+        <section class="featured-aquariums">
+            <h2>Explore These Famous Aquariums</h2>
+            <ul>
+                <li><a href="https://www.georgiaaquarium.org/" target="_blank" rel="noopener noreferrer">Georgia Aquarium</a></li>
+                <li><a href="https://churaumi.okinawa/en/" target="_blank" rel="noopener noreferrer">Okinawa Churaumi Aquarium</a></li>
+                <li><a href="https://www.rwsentosa.com/en/attractions/sea-aquarium" target="_blank" rel="noopener noreferrer">S.E.A. Aquarium Singapore</a></li>
+                <li><a href="https://thedubaiaquarium.com/" target="_blank" rel="noopener noreferrer">Dubai Aquarium & Underwater Zoo</a></li>
+                <li><a href="https://www.oceanario.pt/en/" target="_blank" rel="noopener noreferrer">Lisbon Oceanarium</a></li>
+            </ul>
+        </section>
+    </main>
+    
+<!-- Using a tiny javascript code to populate the year to remain consistent with earlier submissions. -->
+    <footer>
+        <p>&copy; <span id="year"></span> Roger Faught. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const yearSpan = document.getElementById('year');
+        yearSpan.textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

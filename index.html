@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquariums to be Seen</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="banner">
+        <img src="images/banner.jpg" alt="Aquarium Banner">
+        <div class="overlay-text">
+            <div class="overlay-box">
+                <h1>Aquariums of the World</h1>
+                <h2>Roger Faught</h2>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_blank" rel="noopener noreferrer" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="famous-aquariums.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-fish"></i> Famous Aquariums</a></li>
+            <li><a href="conservation.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-leaf"></i> Conservation</a></li>
+            <li><a href="contact.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="content-block">
+            <div class="text">
+                <p>Aquariums are really important for protecting ocean animals and teaching people about them. They give fish and other sea creatures a safe place to live, where they are watched over and taken care of. Scientists use aquariums to study how these animals live, and they also help breed animals that are in danger of disappearing from the wild. Aquariums have fun activities and cool displays that help people learn why the oceans and the animals in them need to be protected.</p>
+                <p>Besides showing off all kinds of sea life, aquariums teach visitors how humans are hurting the oceans. They talk about things like pollution, too much fishing, and climate change. Aquariums help people understand how important it is to take better care of the ocean. They encourage everyone to do things like use less plastic and support groups that help protect sea animals. Aquariums help people of all ages see why saving the ocean matters and how they can make a difference now and in the future.</p>
+                </div>
+            <div class="image">
+                <img src="images/aquarium1.jpg" alt="Aquarium Exhibit 1">
+            </div>
+        </section>
+       
+        <section class="content-block reverse">
+            <div class="text">
+                <p>When people visit aquariums, they get a better understanding of ocean life. They can see sea animals up close, watch them in action, and take part in fun activities that make learning exciting. Many aquariums have touch pools where visitors can gently touch animals like starfish. Some offer tours or let you watch animals being fed. These experiences help people feel more connected to sea creatures and understand why it’s so important to protect them and their homes in the ocean.</p>
+                <p>Aquariums do more than just teach visitors. They also help scientists with research and work to save endangered species. Many aquariums take part in programs with other groups around the world to protect animals whose homes are being destroyed or who are in danger because of humans. Scientists at aquariums study how animals grow, stay healthy, and reproduce. The work aquariums do also includes rescuing injured animals, helping rebuild damaged habitats, and releasing animals back into the wild when they are ready.</p>
+            </div>
+            <div class="image">
+                <img src="images/aquarium3.jpg" alt="Aquarium Exhibit 2">
+            </div>
+        </section>
+
+        <section class="content-block">
+            <div class="text">
+                <p>Aquariums aren’t just places to learn about sea animals. They’re also fun and exciting places to visit. Visitors can see colorful coral reefs, big sharks, smooth stingrays, and glowing jellyfish up close. It’s a chance to relax and enjoy the beauty of ocean life, without harming animals in the wild.</p>
+                <p>Aquariums also have special events and programs throughout the year. They hold seasonal exhibits, fun workshops, and activities that are great for families, school groups, and tourists. These events make learning about the ocean fun and interesting. Many aquariums also encourage people to help protect the ocean. They offer programs like beach cleanups, citizen science projects, and ways to support eating seafood responsibly. Aquariums bring people together in this way and help them understand why it’s important to take care of ocean animals and their homes.</p>
+            </div>
+            <div class="image">
+                <img src="images/aquarium2.jpg" alt="Aquarium Exhibit 3">
+            </div>
+        </section>
+        <section class="featured-aquariums">
+            <h2>Explore These Famous Aquariums</h2>
+            <ul>
+                <li><a href="https://www.georgiaaquarium.org/" target="_blank" rel="noopener noreferrer">Georgia Aquarium</a></li>
+                <li><a href="https://churaumi.okinawa/en/" target="_blank" rel="noopener noreferrer">Okinawa Churaumi Aquarium</a></li>
+                <li><a href="https://www.rwsentosa.com/en/attractions/sea-aquarium" target="_blank" rel="noopener noreferrer">S.E.A. Aquarium Singapore</a></li>
+                <li><a href="https://thedubaiaquarium.com/" target="_blank" rel="noopener noreferrer">Dubai Aquarium & Underwater Zoo</a></li>
+                <li><a href="https://www.oceanario.pt/en/" target="_blank" rel="noopener noreferrer">Lisbon Oceanarium</a></li>
+            </ul>
+        </section>
+    </main>
+
+<!-- Using a tiny javascript code to populate the year to remain consistent with earlier submissions. -->
+ 
+    <footer>
+        <p>&copy; <span id="year"></span> Roger Faught. All rights reserved.</p>
+    </footer>
+
+   <script>
+        const yearSpan = document.getElementById('year');
+        yearSpan.textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Aquariums of the World</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="banner">
+        <img src="images/banner.jpg" alt="Aquarium Banner">
+        <div class="overlay-text">
+            <div class="overlay-box">
+                <h1>Aquariums of the World</h1>
+                <h2>Roger Faught</h2>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html" target="_blank" rel="noopener noreferrer" class="active"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="famous-aquariums.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-fish"></i> Famous Aquariums</a></li>
+            <li><a href="conservation.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-leaf"></i> Conservation</a></li>
+            <li><a href="contact.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="content-block">
+            <div class="text">
+                <p>Aquariums around the world serve as important centers for marine education and conservation. They provide visitors with opportunities to learn about ocean life in an interactive and engaging way. By showcasing a wide variety of marine species, aquariums help people understand the importance of protecting marine animals and their habitats.</p>
+
+                <p>Through carefully designed exhibits and educational programs, aquariums offer visitors a chance to explore the underwater world without disturbing natural habitats. Many aquariums also present information about the challenges facing marine environments today, such as pollution and climate change. They encourage visitors to support conservation efforts and responsible practices.</p>
+            </div>
+            <div class="image">
+                <img src="images/about-image1.jpg" alt="Educational Aquarium Exhibit">
+            </div>
+        </section>
+
+        <section class="content-block reverse">
+            <div class="text">
+                <p>Aquariums often work with scientists and conservation organizations to protect endangered species and restore damaged ecosystems. This may include breeding programs for rare animals, rescue and rehabilitation of injured marine life, and research on ocean health. Aquariums play an important role in helping people understand how science and conservation can work together to protect marine biodiversity.</p>
+
+                <p>Visitors to aquariums can learn how they can make a difference by supporting conservation programs and adopting ocean-friendly habits. Many aquariums provide information about how to reduce plastic waste, protect marine wildlife, and support sustainable seafood choices. They raise awareness and encourage people to take action and become part of the solution for healthier oceans.</p>
+            </div>
+            <div class="image">
+                <img src="images/about-image2.jpg" alt="Marine Conservation Efforts">
+            </div>
+        </section>
+    </main>
+
+<!-- Using a tiny javascript code to populate the year to remain consistent with earlier submissions. -->
+
+    <footer>
+        <p>&copy; <span id="year"></span> Roger Faught. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const yearSpan = document.getElementById('year');
+        yearSpan.textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

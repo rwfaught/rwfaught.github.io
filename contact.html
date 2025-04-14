@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Aquariums of the World</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="banner">
+        <img src="images/banner.jpg" alt="Aquarium Banner">
+        <div class="overlay-text">
+            <div class="overlay-box">
+                <h1>Aquariums of the World</h1>
+                <h2>Roger Faught</h2>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="famous-aquariums.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-fish"></i> Famous Aquariums</a></li>
+            <li><a href="conservation.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-leaf"></i> Conservation</a></li>
+            <li><a href="contact.html" target="_blank" rel="noopener noreferrer" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <div class="text">
+                <p>This website was created to provide information about aquariums around the world and their role in marine education and conservation. Visitors interested in learning more about aquariums, marine life, or conservation programs are encouraged to explore the resources provided throughout the site.</p>
+                <p>For additional information or questions, please feel free to contanct us. Visitors may reach out by email to inquire about the aquariums featured on this site or to suggest new content related to marine conservation and education.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="text">
+                <p>Many aquariums welcome visitors who are interested in volunteering or supporting their conservation work. Contacting an aquarium directly is the best way to learn about opportunities to get involved. Some organizations offer educational programs, tours, and events where visitors can contribute to ocean conservation efforts.</p>
+
+                <p>To get in touch, please send an email to: <strong>roger.faught@bhcc.edu</strong>. Responses to inquiries are typically provided within 48 hours.</p>
+            </div>
+        </section>
+
+    </main>
+
+<!-- Using a tiny javascript code to populate the year to remain consistent with earlier submissions. -->
+
+    <footer>
+        <p>&copy; <span id="year"></span> Roger Faught. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const yearSpan = document.getElementById('year');
+        yearSpan.textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
