@@ -9,15 +9,14 @@ body {
     margin: 0;
     font-family: 'Lato', sans-serif;
     background-color: #f0f8ff;
-    color: #333;
+    color: cadetblue;
     min-height: 100vh;
     text-align: center;
-    color: cadetblue;
 }
 
 h1 {
     display: flex;
     flex: 1;
-    color: red;
+    color: cadetblue;
     justify-content: center;
 }
