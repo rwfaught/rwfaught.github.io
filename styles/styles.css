@@ -13,7 +13,6 @@ body {
     min-height: 100vh;
     text-align: center;
     color: cadetblue;
-    justify-content: center;  /* horizontal centering */
 }
 
 h1 {
