@@ -16,5 +16,7 @@ body {
     justify-content: center;  /* horizontal centering */
 }
 
- 
-
+h1 {
+    display: flex;
+    flex: 1;
+}
