@@ -1,0 +1,351 @@
+:root {
+  /* === Base Colors === */
+  --bg-primary: #222;
+  --bg-hover: #333;
+  --text-on-dark: #ffffff;
+  --accent-color: #e7e585;
+
+  /* === Area Folder Backgrounds === */
+  --bg-area-family: #3e6a8b;
+  --bg-area-finance: #006352;
+  --bg-area-health: #346e37;
+  --bg-area-partner: #168d69;
+  --bg-area-school: #045518;
+  --bg-area-recovery: rgb(62, 161, 168);
+  --bg-area-music: rgb(62, 168, 80);
+  --bg-area-spirituality: rgb(162, 111, 168);
+  --bg-area-ai: rgba(152, 189, 211, 0.603);
+  --bg-area-mental-health: rgb(119, 26, 119);
+  --bg-area-physical-health: rgb(171, 204, 128);
+  --bg-archive-dailynotes: #202b23;
+  --bg-archive-school: #202b23;
+/* === Top Level Folder Backgrounds */
+
+  --bg-toplevel-archive: rgb(136, 0, 0);
+  --bg-toplevel-areas: rgb(12, 104, 89);
+  --bg-toplevel-inbox: rgb(0, 96, 134);
+  --bg-toplevel-interests: rgb(103, 0, 134);
+  --bg-toplevel-notes: rgb(18, 92, 3);
+  --bg-toplevel-workingon: rgb(0, 19, 185);
+
+  /* === Collapse Icon Colors === */
+  --icon-bg: #539e7b;
+  --icon-stroke: #ffffff;
+  --icon-highlight: #00ffbf;
+
+  /* === File Tag Colors === */
+  --tag-color-todo: yellow;
+  --tag-color-random-thoughts: rgb(55, 226, 146);
+  --tag-color-ai-chat: rgb(184, 147, 226);
+  --priority-low: rgb(110, 219, 88);
+  --priority-medium: rgb(208, 255, 0);
+  --priority-high: rgb(219, 88, 88);
+
+  /* === Misc Backgrounds === */
+  --bg-nav-insert: #021b1625;
+  --bg-header: #0a4e4125;
+  --bg-tab-empty: rgb(116, 52, 52);
+  --bg-empty-state: rgba(70, 18, 18, 0.308);
+  --bg-editor: rgba(43, 52, 53, 0.5);
+  --bg-rendered: rgb(231, 231, 229);
+  --bg-code: rgb(2, 24, 26);
+  --text-editor: rgb(255, 255, 255);
+  --text-rendered: rgb(0, 0, 0);
+  --bg-pill: rgb(255, 255, 0);
+
+  /* === Typography === */
+  --font-default: "Source Sans Pro", monospace;
+  --font-jost: "Jost", sans-serif;
+  --font-roboto-mono: "Roboto Mono", monospace;
+  --font-inter: "Inter", sans-serif;
+  --font-fira: "Fira Sans", sans-serif;
+  --text-folder-size: 17px;
+  --text-file-size: 16px;
+  --font-weight-regular: 100;
+  --font-weight-bold: 200;
+
+  /* === Spacing === */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 24px;
+  --space-lg: 24px;
+
+  /* === Radius === */
+  --radius-small: 4px;
+  --radius-medium: 8px;
+
+  /* === Transitions === */
+  --transition-fast: 150ms ease-in-out;
+  --transition-medium: 300ms ease;
+
+  /* === Icon Sizing === */
+  --icon-size: 12px;
+  --icon-stroke-width: 3px;
+}
+
+/* === Google Fonts Import === */
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Inter:wght@400;600&family=Roboto+Mono:wght@400;700&family=Source+Sans+Pro:wght@400;600&family=Fira+Sans:wght@400;700&display=swap');
+
+/* === Folder Title Styling === */
+.nav-folder-title.tree-item-self.is-clickable.mod-collapsible {
+  background-color: rgba(43, 68, 41, 0.192);
+  color: white;
+  border-left: 3px solid var(--accent-color);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-folder-size);
+  padding-left: var(--space-lg);
+  transition: background-color var(--transition-medium);
+  font-family: var(--font-fira);
+  border-bottom: 1px dotted gray;
+  position: relative;
+}
+
+.nav-folder-title.tree-item-self.is-clickable.mod-collapsible:hover {
+  background-color: var(--bg-hover);
+  color: var(--text-on-dark);
+}
+
+/* === Folder Backgrounds by Area === */
+.nav-folder-title[data-path*="family"].is-clickable.mod-collapsible {
+  background: var(--bg-area-family);
+}
+.nav-folder-title[data-path*="finance"].is-clickable.mod-collapsible {
+  background: var(--bg-area-finance);
+}
+.nav-folder-title[data-path*="health"].is-clickable.mod-collapsible {
+  background: var(--bg-area-health);
+}
+.nav-folder-title[data-path*="partner"].is-clickable.mod-collapsible {
+  background: var(--bg-area-partner);
+  color: rgb(148, 238, 186);
+  font-weight: bold;
+}
+.nav-folder-title[data-path*="school"].is-clickable.mod-collapsible {
+  background: var(--bg-area-school);
+  color: rgb(148, 238, 186);
+  font-weight: bold;
+}
+
+.nav-folder-title[data-path*="daily notes"].is-clickable.mod-collapsible {
+  background: var(--bg-archive-dailynotes);
+  color: rgb(148, 238, 186);
+  font-weight: bold;
+}
+/* TESTING TOP LEVEL COLORS */
+.nav-folder-title[data-path*="ARCHIVE"].is-clickable.mod-collapsible {
+  background: var(--bg-toplevel-archive);
+  color: rgb(148, 238, 186);
+  font-weight: bold;
+}
+
+.nav-folder-title[data-path*="AREAS"].is-clickable.mod-collapsible {
+  background: var(--bg-toplevel-areas);
+  color: rgb(148, 238, 186);
+  font-weight: bold;
+}
+
+.nav-folder-title[data-path*="INBOX"].is-clickable.mod-collapsible {
+  background: var(--bg-toplevel-inbox);
+  color: rgb(221, 238, 148);
+  font-weight: bold;
+}
+
+
+.nav-folder-title[data-path*="NOTES"].is-clickable.mod-collapsible {
+  background: var(--bg-toplevel-notes);
+  color: rgb(113, 233, 102);
+  font-weight: bold;
+}
+.nav-folder-title[data-path*="WORKING ON"].is-clickable.mod-collapsible {
+  background: var(--bg-toplevel-workingon);
+  color: rgb(148, 238, 186);
+  font-weight: bold;
+}
+
+/*
+.nav-folder-title[data-path*="recovery"].is-clickable.mod-collapsible {
+  font-weight: bold;
+  background: var(--bg-area-recovery);
+}
+.nav-folder-title[data-path*="music"].is-clickable.mod-collapsible {
+  font-weight: bold;
+  background: var(--bg-area-music);
+}
+.nav-folder-title[data-path*="spirituality"].is-clickable.mod-collapsible {
+  font-weight: bold;
+  background: var(--bg-area-spirituality);
+  color: black;
+}
+.nav-folder-title[data-path*="ai tools"].is-clickable.mod-collapsible {
+  font-weight: bold;
+  background: var(--bg-area-ai);
+  color: white;
+}
+.nav-folder-title[data-path*="mental health"].is-clickable.mod-collapsible {
+  background: var(--bg-area-mental-health);
+}
+.nav-folder-title[data-path*="physical health"].is-clickable.mod-collapsible {
+  background: var(--bg-area-physical-health);
+  color: black;
+}
+*/
+
+/* === Collapse Icon Styling === */
+.tree-item-icon.collapse-icon.is-collapsed {
+  margin-left: calc(var(--space-md) * -1);
+  background-color: var(--icon-bg);
+  
+  background-color: rgba(255, 0, 0, 0);
+  border-radius: var(--radius-small);
+  padding: 0px;
+}
+
+.tree-item-icon.collapse-icon.is-collapsed svg {
+  color: var(--icon-highlight);
+  stroke: var(--icon-stroke);
+  stroke-width: var(--icon-stroke-width);
+  width: var(--icon-size);
+  height: var(--icon-size);
+  transition: transform var(--transition-fast);
+}
+
+.tree-item-icon.collapse-icon:not(.is-collapsed) svg {
+  transform: rotate(90deg);
+}
+
+.nav-folder-title.is-clickable.mod-collapsible, .collapse-icon svg.svg-icon {
+  background-color: transparent;
+  font-size: calc(var(--text-folder-size) - 1px) !important;
+}
+
+
+/* After clean-up I make changes. - Roger */
+
+.nav-folder-title.is-clickable.mod-collapsible, .collapse-icon svg.svg-icon {
+
+  color: rgb(255, 255, 255);
+  background-color: #ff000000;
+
+
+}
+
+.tree-item-icon.collapse-icon.is-collapsed svg {
+  stroke: white;
+  background-color: #ff000000;
+
+}
+
+.markdown-rendered {
+  color: rgb(255, 255, 255);
+  background-color: rgb(12, 19, 22);
+  font-family: var(--font-roboto-mono);
+  font-weight: 900;
+  font-weight: bold;
+}
+
+/* Link Colors on the rendered page */
+.metadata-container .internal-link, .markdown-rendered .internal-link {
+  color: rgb(2, 0, 143);
+  text-decoration: underline;
+}
+
+.table-view-table > thead > tr {
+  
+  background-color: rgba(249, 253, 228, 0.514);
+  color: rgb(0, 0, 0) !important;
+}
+
+.table-view-table > thead > tr > th {
+  color: rgb(23, 73, 88);
+}
+
+.table-view-table > tbody > tr > td {
+  font-family: var(--font-fira);
+  color: #b8e7e9;
+  font-size: large;
+  padding-top: 15px;
+  border: 1px solid grey;
+}   
+
+.table-view-table > thead > tr > th {
+  display: none; 
+
+}
+
+/* Colorize Titles of Sub folders in Areas */
+body > div > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div:nth-child(4) > div.tree-item-children.nav-folder-children > div:nth-child(2) > div {
+  color: pink;
+}
+
+body > div > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div:nth-child(4) > div.tree-item-children.nav-folder-children > div:nth-child(3) > div {
+  color: lightseagreen;
+}
+
+body > div > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) > div > div.nav-files-container.node-insert-event > div > div:nth-child(4) > div.tree-item-children.nav-folder-children > div:nth-child(4) > div {
+  color: rgb(82, 140, 226);
+}
+
+/* END COLORIZE */
+
+
+.empty-state {
+  background-color: rgba(59, 0, 0, 0.377);
+}
+
+
+body > div > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-container > div.workspace-leaf.mod-active > div > div.view-content > div.markdown-reading-view > div > div > div > pre
+{
+  background-color: rgb(241, 241, 236);
+}
+
+.language-css {
+  background-color: rgb(196, 177, 72);
+}
+
+.token.entity, .token.parameter, .token.property, .token.url, .language-css .token.string, .style .token.string, .token.variable
+{
+  color: blue;
+
+}
+
+code[class*="language-"], pre[class*="language-"] {
+  color: rgb(0, 87, 158);
+}
+
+.markdown-source-view.mod-cm6 .cm-embed-block 
+{
+  background-color: rgb(48, 47, 43);
+  color: rgb(255, 255, 255) !important;
+}
+.metadata-property input[type='text'], .metadata-property input[type='date'], .metadata-property input[type='datetime-local'], .metadata-property input[type='number'], .metadata-property .multi-select-container, .multi-select-pill-content {
+  color: rgb(137, 137, 141);
+}
+
+.metadata-container .internal-link, .markdown-rendered .internal-link {
+  color: skyblue !important;
+}
+
+.project-table-1 th {
+  color: blue;
+  font-weight: bold;
+}
+.project-table-1 td {
+  font-size: 14px;
+  padding: 6px;
+}
+
+/* to swap direction of rows where filename comes after for instance project name */
+
+.markdown-rendered > .markdown-preview-section > div:last-child > *:last-child, .markdown-rendered > .markdown-preview-section > div:not(.mod-ui):has(+ .mod-ui) > *:last-child {
+  direction: ltr;
+}
+
+
+.table-view-table td:first-child, .table-view-table th:first-child
+
+.block-language-dataview > .table-view-table td:first-child,
+.block-language-dataview > .table-view-table th:first-child {
+  background-color: red;
+  color: blue !important;
+  display: none;
+}
