@@ -10,8 +10,11 @@ body {
     background-color: #f0f8ff;
     color: #333;
     min-height: 100vh;
+    text-align: center;
+    color: cadetblue;
 }
 
+ 
 header.banner {
     position: relative;
     width: 100%;
